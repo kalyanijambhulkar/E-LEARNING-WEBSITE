@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codenest Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add animation styles here */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .about-section h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .about-section p {
+            color: #666;
+            line-height: 1.5;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            display: inline-block;
+            margin-right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .category:hover {
+            background-color: #666;
+        }
+
+        .category:last-child {
+            margin-right: 0;
+        }
+
+        .hackbox {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .hackbox-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .hackbox-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hackbox img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rectangle form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedbox {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto; /* This will center the feedbox horizontally */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feed {
+            text-align: center;
+        }
+        .title2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        .shortdesc2 {
+            text-align: center;
+        }
+        
+        
+        /* Additional styles */
+        /* Add your additional styles here */
+
+    </style>
+</head>
+
+<body>
+    <header class="animated fadeIn">
+        <h1><b>XYZ Learning Platform</b></h1>
+    </header>
+
+    <nav class="animated fadeIn" style="display: flex; justify-content: space-around; background-color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 10px;">
+        <a href="#" target="self" id="home-link" style="color: white; text-decoration: none;">Home</a>
+        <a href="course.html" id="courses-link" style="color: white; text-decoration: none;">Courses</a>
+        <a href="quiz.html" id="quiz-link" style="color: white; text-decoration: none;">Quiz</a>
+        <a href="login.php" id="login-link" style="color: white; text-decoration: none;">Logout</a>
+    </nav>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>Welcome to xyz</h2>
+            <p>Empowering professionals with comprehensive IT and Business Management courses to thrive in today's competitive environment.</p>
+            <div style="display: flex; justify-content: center;">
+                <a href="bi.html" class="category">BUSINESS MANAGEMENT</a>
+                <a href="im.html" class="category">IT MANAGEMENT</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>Explore IT and Business Management</h2>
+            <div class="hackbox">
+                <div class="hackbox-content">
+                    <h2>IT Management</h2>
+                    <p>IT management refers to the monitoring and administration of an organization's information technology systems: hardware, software, and networks. IT management focuses on how to make information systems operate efficiently. Just as important, it's about helping people work better.</p>
+                </div>
+                <div class="hackbox-image">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.vN86lZCAdr3RDSXc0cuHcAHaE8&pid=Api&P=0&h=220" alt="IT Mngt Image">
+                </div>
+            </div>
+
+            <div class="hackbox">
+                <div class="hackbox-content">
+                    <h2>Business Management</h2>
+                    <p>Business management is the process of planning, organizing, directing, and controlling the activities of a business or organization to achieve its goals and objectives. It involves overseeing all aspects of a business, from finance and operations to marketing and human resources.</p>
+                </div>
+                <div class="hackbox-image">
+                    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/business-management-1900077-1604743.png?f=webp&w=512" alt="Business mngt Image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>ABOUT US</h2>
+            <p>Welcome to our platform dedicated to offering comprehensive courses in IT Management and Business Management. Our aim is to equip professionals with the knowledge and skills necessary to thrive in today's competitive business environment.</p>
+            <h4 style="color:black; font-size: 20px;">Course Offerings:</h4>
+            <p>Explore our diverse range of courses covering various aspects of IT and Business Management. From project management methodologies to strategic planning techniques, our courses are designed to address the evolving needs of professionals in these fields.</p>
+
+            <h4 style="color:black; font-size: 20px;">Career Advancement:</h4>
+            <p>Our courses are designed to help professionals advance their careers and achieve their professional goals. Whether you're looking to transition into a management role, enhance your leadership skills, or stay updated with the latest industry trends, our courses provide the tools and knowledge you need to succeed.</p>
+
+            <h4 style="color:black; font-size: 20px;">Cutting-Edge Curriculum:</h4>
+            <p>Our courses are developed and regularly updated to reflect the latest trends, technologies, and best practices in IT and Business Management. We prioritize staying ahead of industry developments to ensure that our students receive the most relevant and up-to-date education possible.</p>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="about-section">
+            <div class="title2 animated fadeIn" id="feedBACK">
+                <h2>Feedback</h2>
+                <div class="shortdesc2">
+                    <p>Please share your valuable feedback with us</p>
+                </div>
+            </div>
+
+            <!-- Feedback form in index.html -->
+            <div class="feedbox animated fadeIn">
+                <div class="feed">
+                    <form id="feedbackForm">
+                        <label for="fname">Your Name</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="additional">Feedback Message</label><br>
+                        <textarea id="additional" name="additional"></textarea><br>
+                        <button type="submit" id="csubmit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Function to handle form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get form values
+            let name = document.getElementById('fname').value;
+            let email = document.getElementById('email').value;
+            let feedbackmessage = document.getElementById('additional').value;
+
+            // Create a feedback object
+            let feedback = {
+                name: name,
+                email: email,
+                feedbackmessage: feedbackmessage
+            };
+
+            // Get existing feedbacks from local storage or initialize an empty array
+            let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+
+            // Add the new feedback to the array
+            feedbacks.push(feedback);
+
+            // Save the updated feedbacks array to local storage
+            localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+            // Reset the form
+            document.getElementById("feedbackForm").reset();
+
+            // Show success message
+            alert("Feedback submitted successfully!");
+        });
+    </script>
+</body>
+
+</html>
